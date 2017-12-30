@@ -19,6 +19,5 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - && \
 RUN if [ -f /app/tmp/pids/server.pid ]; then rm /app/tmp/pids/server.pid; fi
 
 RUN mv /app/config/graphs-sample.json.erb /app/config/graphs.json.erb
-ADD ./production.rb /app/config/environments/production.rb
 
 CMD ["rails", "s"]
