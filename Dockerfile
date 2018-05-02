@@ -1,4 +1,4 @@
-FROM ruby:2.2
+FROM ruby:2.3
 MAINTAINER Maarten Wallraf <maarten@2nms.com>
 
 WORKDIR /usr/src
